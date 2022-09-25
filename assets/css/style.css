@@ -8,55 +8,120 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+/* consolidated font-family for header and footer */
+header, footer { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    }
+
+/* consolidated color for header, a, #content figure, and #benefits figure */
+
+header, a, #content figure, #benefits figure {
     color: #ffffff;
 }
 
-.header h1 {
+/* changed .header to header and removed class attribute in HTML */
+header {
+    padding: 20px;
+    background-color: #2a607c;
+}
+
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* consolidated font family for header nav, #content figure, and #benefits */
+header nav, #content figure, #benefits {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* changed div to nav */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
+/* removed list-style-type: none */
 
-.header div ul li {
+/* changed div to nav */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
-.hero {
+/* changed .hero to #hero */
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* changed .content to #content */
+#content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* used #content figure to consolidate declaration blocks previously under .search-engine-optimization, .online-reputation-management, and .social-media-marketing */
+#content figure  {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+}
+
+/* used #content img to consolidate declaration blocks previously under .search-engine-optimization img, .online-reputation-management img, and .social-media-marketing img */
+#content img {
+    max-height: 200px;
+}
+
+/* used #content h2 to consolidate declaration blocks previously under .search-engine-optimization h2, .online-reputation-management h2, and .social-media-marketing h2 */
+#content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* changed .benefits to #benefits */
+#benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+}
+
+/* used #benefits figure to consolidate declaration blocks previously under .benefit-lead, .benefit-brand, and .benefit-cost */
+#benefits figure {
+    margin-bottom: 32px;
+}
+
+/* used #benefits h3 to consolidate declaration blocks previously under .benefit-lead h3, .benefit-brand h3, and .benefit-cost h3 */
+#benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* used #benefits img to consolidate declaration blocks previously under .benefit-lead img, .benefit-brand img, and .benefit-cost img */
+#benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 .float-left {
@@ -69,132 +134,19 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* changed p to figcaption */
+figcaption {
+    font-size: 16px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* changed .footer to footer and removed class attribute in HTML */
+footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* changed h2 to h4 */
+footer h4 {
     font-size: 20px;
 }
